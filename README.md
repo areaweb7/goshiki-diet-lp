@@ -5,7 +5,7 @@
 
 ## デプロイ情報
 - **デプロイ先：** GitHub Pages
-- **URL：** https://yito-ito.github.io/goshiki-diet-lp/
+- **URL：** https://areaweb7.github.io/goshiki-diet-lp/
 - **デプロイ日：** 2025年10月28日
 
 ## ファイル構成
