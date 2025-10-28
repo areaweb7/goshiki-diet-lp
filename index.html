@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【2日間限定】お菓子を自然と減らせる方法 - 五色ダイエット</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Hiragino Maru Gothic ProN', 'Hiragino Sans', 'Yu Gothic', YuGothic, Meiryo, sans-serif;
+            line-height: 1.9;
+            color: #4a4a4a;
+            background: linear-gradient(180deg, #fff5f7 0%, #fff 30%, #f0f9ff 60%, #fffef0 100%);
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* 五色アクセントライン */
+        .five-color-accent {
+            height: 8px;
+            background: linear-gradient(to right, 
+                #4ecdc4 0%, #4ecdc4 20%, 
+                #ff6b9d 20%, #ff6b9d 40%, 
+                #ffd93d 40%, #ffd93d 60%, 
+                #f8f9fa 60%, #f8f9fa 80%, 
+                #2d3436 80%, #2d3436 100%);
+        }
+        
+        /* ヘッダー */
+        .header {
+            background: linear-gradient(135deg, #ffeef8 0%, #ffe4f1 50%, #ffd4eb 100%);
+            position: relative;
+            padding: 80px 20px;
+            border-radius: 0 0 40px 40px;
+            box-shadow: 0 8px 30px rgba(255, 107, 157, 0.15);
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(to right, 
+                #4ecdc4 0%, #4ecdc4 20%, 
+                #ff6b9d 20%, #ff6b9d 40%, 
+                #ffd93d 40%, #ffd93d 60%, 
+                #f8f9fa 60%, #f8f9fa 80%, 
+                #2d3436 80%, #2d3436 100%);
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            color: #d63384;
+            font-weight: 900;
+            text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.8);
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .header .sub-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #c2185b;
+            font-weight: 700;
+            line-height: 1.8;
+        }
+        
+        .limited-badge {
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff4d7d 100%);
+            color: white;
+            padding: 14px 35px;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 700;
+            margin-top: 15px;
+            box-shadow: 0 6px 20px rgba(255, 77, 125, 0.4);
+            animation: pulse 2s infinite;
+            border: 3px solid white;
+        }
+        
+        /* カウントダウンタイマー */
+        .countdown-timer {
+            background: linear-gradient(135deg, #9b87d1 0%, #7b68b8 100%);
+            padding: 30px 45px;
+            border-radius: 20px;
+            margin-top: 25px;
+            display: inline-block;
+            box-shadow: 0 12px 40px rgba(123, 104, 184, 0.4);
+            border: 4px solid #ffffff;
+        }
+        
+        .countdown-timer .timer-label {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(75, 54, 124, 0.5);
+        }
+        
+        .countdown-timer .timer-display {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .countdown-timer .time-unit {
+            background: rgba(255, 255, 255, 0.25);
+            padding: 15px 20px;
+            border-radius: 12px;
+            min-width: 75px;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+        }
+        
+        .countdown-timer .time-number {
+            display: block;
+            font-size: 38px;
+            font-weight: 900;
+            color: #ffffff;
+            line-height: 1;
+            text-shadow: 0 3px 10px rgba(75, 54, 124, 0.6);
+        }
+        
+        .countdown-timer .time-label {
+            display: block;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.95);
+            margin-top: 8px;
+            font-weight: 600;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+        }
+        
+        /* ビデオセクション */
+        .video-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(180deg, #fff 0%, #fff5f7 100%);
+        }
+        
+        .video-section h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #d63384;
+            font-weight: 900;
+        }
+        
+        /* ビフォーアフター */
+        .before-after {
+            background: white;
+            padding: 70px 20px;
+            position: relative;
+        }
+        
+        .before-after h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #d63384;
+            text-align: center;
+            font-weight: 900;
+            text-shadow: 2px 2px 0px #ffe4f1;
+        }
+        
+        .result-box {
+            background: linear-gradient(135deg, #fff0f6 0%, #ffe4f1 50%, #ffd4eb 100%);
+            color: #d63384;
+            padding: 45px;
+            border-radius: 30px;
+            margin: 40px 0;
+            font-size: 26px;
+            font-weight: 900;
+            text-align: center;
+            border: 4px solid #ff6b9d;
+            box-shadow: 0 10px 40px rgba(214, 51, 132, 0.2);
+        }
+        
+        .result-box .number {
+            font-size: 52px;
+            margin: 25px 0;
+            color: #ff4d7d;
+            text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.6);
+            font-weight: 900;
+        }
+        
+        .snack-comparison {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+        
+        .snack-box {
+            flex: 1;
+            min-width: 280px;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .snack-box.before {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe8e8 100%);
+            border: 4px solid #ff6b9d;
+        }
+        
+        .snack-box.after {
+            background: linear-gradient(135deg, #f0fff4 0%, #d4f4dd 100%);
+            border: 4px solid #4ecdc4;
+        }
+        
+        .snack-box h3 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            font-weight: 900;
+        }
+        
+        .snack-box p {
+            font-size: 17px;
+            line-height: 2;
+        }
+        
+        /* 共感セクション */
+        .sympathy {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff9e6 100%);
+            padding: 70px 20px;
+            border-radius: 40px;
+            margin: 40px 0;
+        }
+        
+        .sympathy h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #d63384;
+            font-weight: 900;
+        }
+        
+        .worry-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .worry-item {
+            background: white;
+            padding: 22px 25px;
+            margin: 18px 0;
+            border-left: 6px solid #ff6b9d;
+            border-radius: 15px;
+            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(255, 107, 157, 0.15);
+            transition: transform 0.3s;
+        }
+        
+        .worry-item:hover {
+            transform: translateX(5px);
+        }
+        
+        /* 変化の過程 */
+        .process {
+            padding: 70px 20px;
+            background: white;
+        }
+        
+        .process h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #d63384;
+            font-weight: 900;
+            text-shadow: 2px 2px 0px #ffe4f1;
+        }
+        
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .timeline-item {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 20px;
+            border-left: 6px solid #4ecdc4;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+        }
+        
+        .timeline-item h3 {
+            color: #4ecdc4;
+            font-size: 24px;
+            margin-bottom: 15px;
+            font-weight: 900;
+        }
+        
+        .timeline-item.highlight {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff9e6 100%);
+            border-left: 6px solid #ffd93d;
+            box-shadow: 0 8px 30px rgba(255, 217, 61, 0.25);
+        }
+        
+        .timeline-item.highlight h3 {
+            color: #f39c12;
+        }
+        
+        /* 3つの秘訣 */
+        .secrets {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 70px 20px;
+            border-radius: 40px;
+            margin: 40px 0;
+        }
+        
+        .secrets h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #d63384;
+            font-weight: 900;
+        }
+        
+        .secret-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 25px;
+        }
+        
+        .secret-card {
+            flex: 1;
+            min-width: 280px;
+            background: white;
+            padding: 35px;
+            margin: 15px;
+            border-radius: 25px;
+            box-shadow: 0 8px 30px rgba(78, 205, 196, 0.15);
+            text-align: center;
+            border: 3px solid #4ecdc4;
+            transition: transform 0.3s;
+        }
+        
+        .secret-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(78, 205, 196, 0.25);
+        }
+        
+        .secret-card .icon {
+            font-size: 70px;
+            margin-bottom: 25px;
+        }
+        
+        .secret-card h3 {
+            font-size: 24px;
+            margin-bottom: 18px;
+            color: #4ecdc4;
+            font-weight: 900;
+        }
+        
+        /* 商品内容 */
+        .product {
+            background: white;
+            padding: 70px 20px;
+        }
+        
+        .product h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #d63384;
+            font-weight: 900;
+            text-shadow: 2px 2px 0px #ffe4f1;
+        }
+        
+        .product-contents {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .content-item {
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe4f1 100%);
+            padding: 30px;
+            margin: 25px 0;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 6px 25px rgba(214, 51, 132, 0.12);
+            border: 2px solid #ff6b9d;
+        }
+        
+        .content-item .number {
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff4d7d 100%);
+            color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-right: 25px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 15px rgba(255, 77, 125, 0.3);
+            border: 3px solid white;
+        }
+        
+        .content-item .text h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+            color: #d63384;
+            font-weight: 900;
+        }
+        
+        /* 価格セクション */
+        .price-section {
+            background: linear-gradient(135deg, #ffeef8 0%, #ffe4f1 50%, #ffd4eb 100%);
+            padding: 70px 20px;
+            text-align: center;
+            position: relative;
+            margin: 40px 0;
+            border-radius: 40px;
+        }
+        
+        .price-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(to right, 
+                #4ecdc4 0%, #4ecdc4 20%, 
+                #ff6b9d 20%, #ff6b9d 40%, 
+                #ffd93d 40%, #ffd93d 60%, 
+                #f8f9fa 60%, #f8f9fa 80%, 
+                #2d3436 80%, #2d3436 100%);
+            border-radius: 40px 40px 0 0;
+        }
+        
+        .price-box {
+            background: white;
+            max-width: 650px;
+            margin: 35px auto;
+            padding: 50px 45px;
+            border-radius: 30px;
+            box-shadow: 0 12px 50px rgba(214, 51, 132, 0.2);
+            border: 4px solid #ff6b9d;
+        }
+        
+        .price-box .current-price {
+            font-size: 56px;
+            font-weight: 900;
+            color: #ff4d7d;
+            margin: 25px 0;
+            text-shadow: 3px 3px 0px #ffe4f1;
+        }
+        
+        .cta-button {
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff4d7d 100%);
+            color: white;
+            padding: 22px 65px;
+            font-size: 26px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 35px 0;
+            font-weight: 700;
+            transition: all 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 0 8px 30px rgba(255, 77, 125, 0.4);
+            border: 3px solid white;
+        }
+        
+        .cta-button:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 40px rgba(255, 77, 125, 0.5);
+        }
+        
+        .guarantee {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff9e6 100%);
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 35px;
+            font-size: 15px;
+            border: 2px solid #ffd93d;
+        }
+        
+        /* FAQ */
+        .faq {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            padding: 70px 20px;
+            border-radius: 40px;
+            margin: 40px 0;
+        }
+        
+        .faq h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+            color: #d63384;
+            font-weight: 900;
+        }
+        
+        .faq-item {
+            background: white;
+            padding: 30px;
+            margin: 25px auto;
+            border-radius: 20px;
+            max-width: 800px;
+            box-shadow: 0 6px 25px rgba(78, 205, 196, 0.15);
+            border: 2px solid #4ecdc4;
+        }
+        
+        .faq-item .question {
+            font-size: 21px;
+            font-weight: 900;
+            color: #4ecdc4;
+            margin-bottom: 15px;
+        }
+        
+        .faq-item .answer {
+            font-size: 17px;
+            line-height: 2;
+            color: #4a4a4a;
+        }
+        
+        /* フッター */
+        .footer {
+            background: linear-gradient(135deg, #2d3436 0%, #1e272e 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 40px 40px 0 0;
+            margin-top: 60px;
+        }
+        
+        /* 購入ボタンセクション */
+        .payment-section {
+            background: white;
+            padding: 70px 20px;
+        }
+        
+        .payment-option {
+            max-width: 850px;
+            margin: 35px auto;
+            padding: 45px;
+            border: 3px solid #ff6b9d;
+            border-radius: 25px;
+            text-align: center;
+            background: linear-gradient(135deg, #fff 0%, #fff5f7 100%);
+            box-shadow: 0 8px 30px rgba(255, 107, 157, 0.15);
+        }
+        
+        .payment-title {
+            font-size: 24px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            color: #d63384;
+        }
+        
+        .payment-button {
+            display: block;
+            width: 100%;
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 28px 45px;
+            font-size: 28px;
+            font-weight: 900;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            border: 4px solid white;
+        }
+        
+        .payment-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+        }
+        
+        .payment-button.bank {
+            background: linear-gradient(135deg, #ff8a00 0%, #ff6b00 100%);
+        }
+        
+        .payment-button.credit {
+            background: linear-gradient(135deg, #4ecdc4 0%, #3bb5ad 100%);
+        }
+        
+        .payment-note {
+            font-size: 15px;
+            color: #666;
+            margin-top: 18px;
+        }
+        
+        .credit-info {
+            margin-top: 25px;
+            font-size: 15px;
+            color: #666;
+        }
+        
+        .card-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        
+        .card-logos img {
+            height: 45px;
+            width: auto;
+        }
+        
+        .security-note {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff9e6 100%);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666;
+            text-align: left;
+            border: 2px solid #ffd93d;
+        }
+        
+        .security-note strong {
+            color: #333;
+        }
+        
+        .arrows {
+            text-align: center;
+            margin: 35px 0;
+        }
+        
+        .arrows span {
+            display: inline-block;
+            font-size: 48px;
+            color: #ff6b9d;
+            margin: 0 8px;
+            animation: bounce 2s infinite;
+            text-shadow: 2px 2px 0px rgba(255, 107, 157, 0.3);
+        }
+        
+        .arrows span:nth-child(1) { animation-delay: 0s; }
+        .arrows span:nth-child(2) { animation-delay: 0.1s; }
+        .arrows span:nth-child(3) { animation-delay: 0.2s; }
+        .arrows span:nth-child(4) { animation-delay: 0.3s; }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 28px;
+            }
+            
+            .header .sub-title {
+                font-size: 18px;
+            }
+            
+            .countdown-timer {
+                padding: 20px 30px;
+            }
+            
+            .countdown-timer .timer-label {
+                font-size: 15px;
+            }
+            
+            .countdown-timer .time-unit {
+                min-width: 60px;
+                padding: 12px 15px;
+            }
+            
+            .countdown-timer .time-number {
+                font-size: 28px;
+            }
+            
+            .countdown-timer .time-label {
+                font-size: 11px;
+            }
+            
+            .snack-comparison {
+                flex-direction: column;
+            }
+            
+            .secret-cards {
+                flex-direction: column;
+            }
+            
+            .result-box .number {
+                font-size: 40px;
+            }
+            
+            .payment-button {
+                font-size: 24px;
+                padding: 22px 35px;
+            }
+            
+            .content-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .content-item .number {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <div class="header">
+        <h1>お菓子を我慢しなくていい❗️<br>でも、自然と減らせる方法があったら<br>知りたくないですか？</h1>
+        <p class="sub-title">62歳が6ヶ月で-4.2kg達成！<br>運動量は変えず、食事改善のみで実現</p>
+        
+        <!-- カウントダウンタイマー -->
+        <div class="countdown-timer" id="header-countdown">
+            <div class="timer-label">⏰ 【2日間限定】販売終了まで残り</div>
+            <div class="timer-display">
+                <div class="time-unit">
+                    <span class="time-number" id="header-days">00</span>
+                    <span class="time-label">日</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="header-hours">00</span>
+                    <span class="time-label">時間</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="header-minutes">00</span>
+                    <span class="time-label">分</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="header-seconds">00</span>
+                    <span class="time-label">秒</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- プロモーション動画 -->
+    <div class="video-section">
+        <div class="container">
+            <h2 style="font-size: 28px; margin-bottom: 20px;">まずはこちらの動画をご覧ください</h2>
+            <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 20px 0; border-radius: 10px;">
+                <iframe src="https://utage-system.com/video/4aLBGzjAUmwA" 
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <p style="font-size: 18px; color: #333; margin-top: 20px;">
+                ⬆️ 62歳ゆかりさんの衝撃のビフォーアフター！<br>
+                お菓子が自然と減った秘密を公開
+            </p>
+        </div>
+    </div>
+
+    <!-- ビフォーアフター -->
+    <div class="before-after">
+        <div class="container">
+            <h2>62歳、食事改善のみで<br>驚きの変化を実現！</h2>
+            
+            <div class="result-box">
+                運動量は変えず、食事改善のみ<br>
+                <div class="number">54.7kg → 50.5kg</div>
+                たった6ヶ月で -4.2kg達成✨
+            </div>
+
+            <div class="snack-comparison">
+                <div class="snack-box before">
+                    <h3>❌ 開始前</h3>
+                    <p>🍘 せんべい大量<br>
+                    🍪 クッキー各種<br>
+                    🥜 ピーナッツ<br>
+                    🍬 チョコレート<br>
+                    🍩 各種お菓子<br><br>
+                    <strong>夜9時半以降も毎日食べ続ける...</strong><br>
+                    <em>「私専用お菓子」が常にある状態</em></p>
+                </div>
+                <div class="snack-box after">
+                    <h3>✅ 6ヶ月後</h3>
+                    <p>🍩 ドーナツ1個<br>
+                    🥔 チップス数枚<br>
+                    🍘 かりんとう数本<br><br>
+                    <strong>これで満足できる！</strong><br>
+                    <em>しかも無理してない、自然とこうなった</em></p>
+                </div>
+            </div>
+
+            <p style="font-size: 20px; margin-top: 30px; color: #ff4757; font-weight: bold; text-align: center;">
+                「こんなに食べていたの⁉️」<br>
+                本人も気づかなかった驚きの変化
+            </p>
+        </div>
+    </div>
+
+    <!-- 共感セクション -->
+    <div class="sympathy">
+        <div class="container">
+            <h2>こんなお悩み、ありませんか？</h2>
+            <div class="worry-list">
+                <div class="worry-item">
+                    🍫 お菓子を辞めなきゃ痩せないと思っている
+                </div>
+                <div class="worry-item">
+                    🥺 お菓子を食べた後の罪悪感が辛い
+                </div>
+                <div class="worry-item">
+                    😢 我慢してもリバウンドしてしまう
+                </div>
+                <div class="worry-item">
+                    🍰 甘いものもしょっぱいものも大好き
+                </div>
+                <div class="worry-item">
+                    😭 夜にお菓子を食べるのがやめられない
+                </div>
+                <div class="worry-item">
+                    💔 過去に何度もダイエットに失敗している
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; font-size: 22px; font-weight: bold;">
+                もし一つでも当てはまるなら、<br>
+                この方法はあなたのためのものです。
+            </p>
+        </div>
+    </div>
+
+    <!-- 変化の過程 -->
+    <div class="process">
+        <div class="container">
+            <h2>ゆかりさんのお菓子が<br>減っていった6ヶ月の記録</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>📝 開始前</h3>
+                    <p>大量のお菓子が「私専用」として常備。夜9時半以降も甘いものとしょっぱいものを無限ループで食べ続ける日々。</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>1〜3ヶ月目</h3>
+                    <p>写真で記録することで「こんなに食べてたの？」と客観視。少しずつ変化が見え始めるが、まだお菓子は楽しんでいる。</p>
+                </div>
+
+                <div class="timeline-item highlight">
+                    <h3>⭐️ 4ヶ月目【大きな転機】</h3>
+                    <p><strong>「夜のお菓子 無し！」の日が突然出現！</strong><br>
+                    今まで毎日当たり前だったのに、<strong>我慢せず自然と</strong>食べない日ができた。<br>
+                    <em>※動画ではこの転機が起きた「理由」を詳しく解説しています</em></p>
+                </div>
+
+                <div class="timeline-item highlight">
+                    <h3>✨ 6ヶ月目〜</h3>
+                    <p><strong>ドーナツ1個、チップス数枚で満足できる体に！</strong><br>
+                    「ダイエットしている感覚なく」この状態に。朝の胃のむかつきも解消。</p>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; font-size: 20px; background: #fff3cd; padding: 30px; border-radius: 10px;">
+                <strong>❓ なぜこんな変化が起きたのか？</strong><br><br>
+                「お菓子を減らそう」と思って減らしたのではありません。<br>
+                <strong>ある食事のバランス</strong>を整えただけで、<br>
+                体が勝手にお菓子を欲しがらなくなったのです。<br><br>
+                <span style="color: #ff4757; font-weight: bold;">その秘密を動画で完全公開しています。</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- 3つの秘訣 -->
+    <div class="secrets">
+        <div class="container">
+            <h2>動画で公開している内容</h2>
+            
+            <div class="secret-cards">
+                <div class="secret-card">
+                    <div class="icon">🌈</div>
+                    <h3>お菓子を自然と<br>減らせる食事法</h3>
+                    <p><strong>五色ダイエットのエッセンスを凝縮</strong><br><br>
+                    なぜ五色で食べるとお菓子が減るのか？その理論と実践法を約30分で完全解説します。</p>
+                </div>
+
+                <div class="secret-card">
+                    <div class="icon">📸</div>
+                    <h3>ゆかりさんの<br>リアルな記録</h3>
+                    <p><strong>6ヶ月間の全記録を公開</strong><br><br>
+                    月ごとのお菓子の量の変化を写真で紹介。「こうすればいいんだ」が具体的に分かります。</p>
+                </div>
+
+                <div class="secret-card">
+                    <div class="icon">📋</div>
+                    <h3>実践に必要な<br>全ての資料</h3>
+                    <p><strong>PDF資料付き</strong><br><br>
+                    手軽に実践できる一覧表。これがあれば明日から迷わずスタートできます。</p>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 15px; margin-top: 40px; text-align: center;">
+                <p style="font-size: 24px; font-weight: bold; margin-bottom: 15px;">🎁 さらに特典</p>
+                <p style="font-size: 18px; line-height: 1.8;">
+                    ゆかりさんが実際に意識した<br>
+                    <strong style="font-size: 22px;">「たった3つのポイント」</strong>も<br>
+                    動画内で詳しく解説！<br><br>
+                    <span style="font-size: 16px;">難しい理論も、厳しい制限も、一切ありません。</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 商品内容 -->
+    <div class="product">
+        <div class="container">
+            <h2>プログラムの内容</h2>
+            
+            <div class="product-contents">
+                <div class="content-item">
+                    <div class="number">①</div>
+                    <div class="text">
+                        <h3>動画（約30分）</h3>
+                        <p><strong>お菓子を自然と辞められる食事バランスの完全解説</strong><br>
+                        五色ダイエットのエッセンスを凝縮。なぜ五色で食べるとお菓子が減るのか、その理論と実践法を詳しく解説します。</p>
+                    </div>
+                </div>
+
+                <div class="content-item">
+                    <div class="number">②</div>
+                    <div class="text">
+                        <h3>動画（約30分）</h3>
+                        <p><strong>ゆかりさんのリアルな食生活を完全公開</strong><br>
+                        6ヶ月間の詳細な記録と、月ごとのお菓子の量の変化を写真で紹介。「こうすればいいんだ」が具体的に分かります。</p>
+                    </div>
+                </div>
+
+                <div class="content-item">
+                    <div class="number">③</div>
+                    <div class="text">
+                        <h3>PDF資料</h3>
+                        <p><strong>手軽に摂れるたんぱく質一覧表</strong><br>
+                        「たんぱく質プラス1品」を実践するための便利な一覧表。これがあれば迷わず実践できます。</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; font-size: 18px; background: #f8f9fa; padding: 30px; border-radius: 10px;">
+                五色ダイエットの創設者・伊藤あずさ自身も<br>
+                <strong>「ケーキ1ホール食べて痩せる」</strong>を実践中。<br>
+                お菓子を完全には辞めず、でも自然と量は減らせる。<br>
+                そんな<strong>贅沢な夢のようなダイエット</strong>を、あなたも。
+            </p>
+        </div>
+    </div>
+
+    <!-- 価格セクション -->
+    <div class="price-section">
+        <div class="container">
+            <h2 style="color: #d63384; margin-bottom: 20px; font-weight: 700; text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8);">今すぐ手に入れる</h2>
+            
+            <div class="price-box">
+                <p style="font-size: 20px; margin-bottom: 20px;">
+                    通常、半年50万円の個別サポートで<br>
+                    お伝えしている内容を凝縮
+                </p>
+                
+                <div class="current-price">
+                    ¥14,900<span style="font-size: 24px;">(税込)</span>
+                </div>
+                
+                <p style="color: #ff4757; font-weight: bold; font-size: 18px; margin: 20px 0;">
+                    ⚠️ 2日間限定販売<br>
+                    再販は未定です
+                </p>
+                
+                <div class="guarantee">
+                    <strong>✅ 一生使える食事の知識</strong><br>
+                    ✅ 買い切り型・追加課金なし<br>
+                    ✅ 何度でも繰り返し視聴可能
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 購入ボタンセクション -->
+    <div class="payment-section">
+        <div class="container">
+            <div class="arrows">
+                <span>↓</span><span>↓</span><span>↓</span><span>↓</span>
+            </div>
+
+            <!-- 銀行振込 -->
+            <div class="payment-option">
+                <div class="payment-title">
+                    銀行振込一括払い：14,900円（税込）
+                </div>
+                
+                <a href="#" class="payment-button bank">
+                    銀行振込一括払いはこちら
+                </a>
+                
+                <p class="payment-note">
+                    ※ご入金確認後に購入確定となります
+                </p>
+            </div>
+
+            <!-- クレジットカード -->
+            <div class="payment-option">
+                <div class="payment-title">
+                    クレジット一括/分割3〜24回払い：14,900円（税込）
+                </div>
+                
+                <a href="#" class="payment-button credit">
+                    クレジット決済はこちら
+                </a>
+                
+                <div class="credit-info">
+                    <p style="margin-bottom: 10px;">
+                        （3回、5回、6回、10回、12回、15回、18回、20回、24回から選べます）<br>
+                        ※カード会社によって分割手数料は別途かかります。
+                    </p>
+                    
+                    <div class="card-logos">
+                        <svg width="60" height="40" viewBox="0 0 60 40" style="background: white; padding: 5px; border-radius: 5px;">
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#1A1F71" font-family="Arial" font-weight="bold" font-size="16">VISA</text>
+                        </svg>
+                        <svg width="60" height="40" viewBox="0 0 60 40" style="background: white; padding: 5px; border-radius: 5px;">
+                            <circle cx="20" cy="20" r="15" fill="#EB001B"/>
+                            <circle cx="40" cy="20" r="15" fill="#F79E1B"/>
+                        </svg>
+                        <svg width="60" height="40" viewBox="0 0 60 40" style="background: white; padding: 5px; border-radius: 5px;">
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#0066B2" font-family="Arial" font-weight="bold" font-size="14">JCB</text>
+                        </svg>
+                        <svg width="60" height="40" viewBox="0 0 60 40" style="background: white; padding: 5px; border-radius: 5px;">
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#006FCF" font-family="Arial" font-weight="bold" font-size="11">AMEX</text>
+                        </svg>
+                        <svg width="60" height="40" viewBox="0 0 60 40" style="background: white; padding: 5px; border-radius: 5px;">
+                            <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="#0079BE" font-family="Arial" font-size="10">Diners</text>
+                        </svg>
+                    </div>
+                    
+                    <p style="margin-top: 15px; font-size: 13px;">
+                        ※VISA、MASTER、JCB、AMEX、Diner'sカードをご利用いただけます。また、デビットカードやプリペイドカードにも対応しています。
+                    </p>
+                </div>
+                
+                <div class="security-note">
+                    <p style="margin-bottom: 10px;">
+                        ※ボタンを押して注文いただくことで、お客様は当社のプライバシーポリシーに同意したものとみなされます。<br>
+                        ※この商品を購入するお客様は、メールマガジンの配信に同意したものとみなされます。
+                    </p>
+                    
+                    <p style="margin-top: 15px;">
+                        <strong>【安全性の取り組み】</strong><br>
+                        当サイトでは、安全かつセキュアな決済を導入しています。さらに、お客様に安心してお買い物いただけるよう、購入情報の管理にも最大限の注意を払っています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- こんな方にオススメ -->
+    <div class="container" style="padding: 60px 20px;">
+        <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px; color: #667eea;">
+            こんな方にピッタリです
+        </h2>
+        
+        <div style="max-width: 600px; margin: 0 auto;">
+            <div class="worry-item">
+                ✅ お菓子を辞めなきゃ痩せないと思っている方
+            </div>
+            <div class="worry-item">
+                ✅ お菓子が大好きな方
+            </div>
+            <div class="worry-item">
+                ✅ かつてお菓子を辞めて痩せたけど、リバウンドした方
+            </div>
+            <div class="worry-item">
+                ✅ お菓子をついつい食べちゃう方
+            </div>
+            <div class="worry-item">
+                ✅ 洋菓子も和菓子も好きな方
+            </div>
+            <div class="worry-item">
+                ✅ 無理をしてまで痩せたくない方
+            </div>
+        </div>
+    </div>
+
+    <!-- お客様の声 -->
+    <div style="background: #f8f9fa; padding: 60px 20px;">
+        <div class="container">
+            <h2 style="text-align: center; font-size: 32px; margin-bottom: 20px; color: #667eea;">
+                五色ダイエットを実践した方々の声
+            </h2>
+            
+            <p style="text-align: center; font-size: 14px; color: #666; margin-bottom: 40px; background: #fff3cd; padding: 15px; border-radius: 5px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                ※こちらは6ヶ月個別サポートを受けられた方の事例です。<br>
+                今回のプログラムは買い切り型の動画教材となります。
+            </p>
+
+            <!-- 石原愛さん -->
+            <div style="background: white; padding: 30px; margin: 30px 0; border-radius: 15px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 24px; color: #667eea; margin-bottom: 15px; text-align: center;">
+                    石原愛さん（41歳）<br>
+                    <span style="font-size: 18px; color: #ff4757;">ケーキ屋さんで働きながら5ヶ月で-5.5kg</span>
+                </h3>
+                
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 20px 0; border-radius: 10px;">
+                    <iframe src="https://utage-system.com/video/ThvPCvlSYhl4" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 10px;">
+                        <strong>✨ 変化のポイント：</strong>
+                    </p>
+                    <ul style="padding-left: 20px; line-height: 1.8;">
+                        <li>ケーキ屋勤務＆麺類大好きでも痩せられた</li>
+                        <li>「食べちゃったな」の罪悪感が消え、食べることを楽しめるように</li>
+                        <li>3ヶ月でウエスト-3.5cm、運動ゼロで達成</li>
+                        <li>丸亀製麺にタクシーで行けというアドバイスに衝撃</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 甲斐かずよさん -->
+            <div style="background: white; padding: 30px; margin: 30px 0; border-radius: 15px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 24px; color: #667eea; margin-bottom: 15px; text-align: center;">
+                    甲斐かずよさん（62歳）<br>
+                    <span style="font-size: 18px; color: #ff4757;">週半分外食＆お酒好きで1年で-20kg</span>
+                </h3>
+                
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 20px 0; border-radius: 10px;">
+                    <iframe src="https://utage-system.com/video/bcBssnD1CYln" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 10px;">
+                        <strong>✨ 変化のポイント：</strong>
+                    </p>
+                    <ul style="padding-left: 20px; line-height: 1.8;">
+                        <li>更年期で何をしても痩せない状態から脱却</li>
+                        <li>週の半分は外食、お酒も楽しみながら減量成功</li>
+                        <li>肝臓の数値も改善、健康診断の結果が良くなった</li>
+                        <li>我慢せず、楽しみながらダイエットできた</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 松井たうさん -->
+            <div style="background: white; padding: 30px; margin: 30px 0; border-radius: 15px; box-shadow: 0 3px 10px rgba(0,0,0,0.1);">
+                <h3 style="font-size: 24px; color: #667eea; margin-bottom: 15px; text-align: center;">
+                    松井たうさん（52歳）<br>
+                    <span style="font-size: 18px; color: #ff4757;">4ヶ月で-6.6kg、写真嫌いから脱却</span>
+                </h3>
+                
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 20px 0; border-radius: 10px;">
+                    <iframe src="https://utage-system.com/video/CeuVuWr8g2dt" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 20px;">
+                    <p style="font-size: 16px; line-height: 1.8; margin-bottom: 10px;">
+                        <strong>✨ 変化のポイント：</strong>
+                    </p>
+                    <ul style="padding-left: 20px; line-height: 1.8;">
+                        <li>人生で一度も痩せたことがない状態から変化</li>
+                        <li>「お菓子も食べてる」のに痩せてる姿を見て興味を持った</li>
+                        <li>ダイエット＝引き算ではなく、何かをやめる必要がない</li>
+                        <li>写真を撮るのが嫌だった→自信を持てるように</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 40px; font-size: 18px; background: white; padding: 30px; border-radius: 10px; max-width: 700px; margin-left: auto; margin-right: auto;">
+                <strong>共通しているのは...</strong><br><br>
+                みなさん「お菓子を辞めず」「好きなものを食べながら」「我慢せず」に結果を出しています。<br><br>
+                これが五色ダイエットの最大の特徴です。
+            </p>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="faq">
+        <div class="container">
+            <h2>よくある質問</h2>
+            
+            <div class="faq-item">
+                <div class="question">Q. 本当にお菓子を食べながら痩せられますか？</div>
+                <div class="answer">A. はい。五色ダイエットはお菓子NGではありません。ゆかりさんも完全には辞めていません。ただ、食事のバランスを整えることで、自然とお菓子の量が減っていくのです。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">Q. 60代でも効果がありますか？</div>
+                <div class="answer">A. ゆかりさんは62歳で実践し、結果を出しています。年齢に関係なく、食事のバランスを整えることは誰にでもできます。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">Q. 運動は必要ですか？</div>
+                <div class="answer">A. ゆかりさんは運動量を変えず、食事改善のみで-4.2kgを達成しました。運動が嫌いな方でも実践できる内容です。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">Q. 動画はいつまで見られますか？</div>
+                <div class="answer">A. 買い切り型ですので、購入後は何度でも繰り返し視聴いただけます。期限はありません。</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="question">Q. 本当に2日間しか買えませんか？</div>
+                <div class="answer">A. はい。再販は未定です。前回販売した「脚痩せ動画」も、現時点で再販の予定はありません。今回が最もお得なタイミングです。</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最後のCTA -->
+    <div class="price-section">
+        <div class="container">
+            <h2 style="color: #d63384; font-size: 36px; margin-bottom: 30px; font-weight: 700; text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.8);">
+                これが、あなたの<br>
+                「最後のダイエット」になります
+            </h2>
+            
+            <p style="color: #4a4a4a; font-size: 20px; margin-bottom: 30px; font-weight: 500; line-height: 1.9;">
+                お菓子を我慢する辛さから解放され、<br>
+                罪悪感なく、自然と痩せていく。<br>
+                そんな一生モノの方法を、今すぐ手に入れてください。
+            </p>
+            
+            <div class="price-box">
+                <div class="current-price">
+                    ¥14,900<span style="font-size: 24px;">(税込)</span>
+                </div>
+                
+                <p style="color: #ff4757; font-weight: bold; font-size: 18px; margin: 20px 0;">
+                    ⚠️ 販売期間：2日間のみ
+                </p>
+                
+                <!-- カウントダウンタイマー -->
+                <div class="countdown-timer" id="cta-countdown" style="margin-top: 20px;">
+                    <div class="timer-label">⏰ 【2日間限定】販売終了まで残り</div>
+                    <div class="timer-display">
+                        <div class="time-unit">
+                            <span class="time-number" id="cta-days">00</span>
+                            <span class="time-label">日</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-number" id="cta-hours">00</span>
+                            <span class="time-label">時間</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-number" id="cta-minutes">00</span>
+                            <span class="time-label">分</span>
+                        </div>
+                        <div class="time-unit">
+                            <span class="time-number" id="cta-seconds">00</span>
+                            <span class="time-label">秒</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrows" style="margin-top: 30px;">
+                <span>↓</span><span>↓</span><span>↓</span><span>↓</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最終購入ボタン -->
+    <div class="payment-section" style="padding-top: 20px;">
+        <div class="container">
+            <!-- 銀行振込 -->
+            <div class="payment-option">
+                <div class="payment-title">
+                    銀行振込一括払い：14,900円（税込）
+                </div>
+                
+                <a href="#" class="payment-button bank">
+                    銀行振込一括払いはこちら
+                </a>
+                
+                <p class="payment-note">
+                    ※ご入金確認後に購入確定となります
+                </p>
+            </div>
+
+            <!-- クレジットカード -->
+            <div class="payment-option">
+                <div class="payment-title">
+                    クレジット一括/分割3〜24回払い：14,900円（税込）
+                </div>
+                
+                <a href="#" class="payment-button credit">
+                    クレジット決済はこちら
+                </a>
+                
+                <div class="credit-info">
+                    <p style="margin-bottom: 10px;">
+                        （3回、5回、6回、10回、12回、15回、18回、20回、24回から選べます）<br>
+                        ※カード会社によって分割手数料は別途かかります。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <div class="footer">
+        <div class="container">
+            <div style="margin-bottom: 20px;">
+                <a href="https://sub.goshiki-diet.or.jp/p/privacy" target="_blank" style="color: white; text-decoration: none; margin: 0 15px;">プライバシーポリシー</a>
+                <span style="color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://sub.goshiki-diet.or.jp/p/VYnavgonUMrK" target="_blank" style="color: white; text-decoration: none; margin: 0 15px;">特定商取引法に基づく表記</a>
+                <span style="color: rgba(255, 255, 255, 0.5);">|</span>
+                <a href="https://sub.goshiki-diet.or.jp/p/company" target="_blank" style="color: white; text-decoration: none; margin: 0 15px;">会社概要</a>
+            </div>
+            <p>© 2025 五色ダイエット協会 All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- カウントダウンタイマーのJavaScript -->
+    <script>
+        // 販売開始: 2025年10月29日 12:00
+        // 販売終了: 2025年10月30日 23:59
+        const endDate = new Date('2025-10-30T23:59:59+09:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = endDate - now;
+
+            if (distance < 0) {
+                // 販売終了
+                document.getElementById('header-days').textContent = '00';
+                document.getElementById('header-hours').textContent = '00';
+                document.getElementById('header-minutes').textContent = '00';
+                document.getElementById('header-seconds').textContent = '00';
+                
+                document.getElementById('cta-days').textContent = '00';
+                document.getElementById('cta-hours').textContent = '00';
+                document.getElementById('cta-minutes').textContent = '00';
+                document.getElementById('cta-seconds').textContent = '00';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // ヘッダーのタイマー更新
+            document.getElementById('header-days').textContent = String(days).padStart(2, '0');
+            document.getElementById('header-hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('header-minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('header-seconds').textContent = String(seconds).padStart(2, '0');
+
+            // CTAセクションのタイマー更新
+            document.getElementById('cta-days').textContent = String(days).padStart(2, '0');
+            document.getElementById('cta-hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('cta-minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('cta-seconds').textContent = String(seconds).padStart(2, '0');
+        }
+
+        // 初回実行
+        updateCountdown();
+        
+        // 1秒ごとに更新
+        setInterval(updateCountdown, 1000);
+    </script>
+
+</body>
+</html>
+
