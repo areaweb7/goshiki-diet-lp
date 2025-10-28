@@ -1467,16 +1467,8 @@
             const distance = endDate - now;
 
             if (distance < 0) {
-                // 販売終了
-                document.getElementById('header-days').textContent = '00';
-                document.getElementById('header-hours').textContent = '00';
-                document.getElementById('header-minutes').textContent = '00';
-                document.getElementById('header-seconds').textContent = '00';
-                
-                document.getElementById('cta-days').textContent = '00';
-                document.getElementById('cta-hours').textContent = '00';
-                document.getElementById('cta-minutes').textContent = '00';
-                document.getElementById('cta-seconds').textContent = '00';
+                // 販売終了 - 公開終了ページにリダイレクト
+                window.location.href = 'https://sub.goshiki-diet.or.jp/p/thXoGsAa8TeC';
                 return;
             }
 
