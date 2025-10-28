@@ -1126,7 +1126,7 @@
                     銀行振込一括払い：14,900円（税込）
                 </div>
                 
-                <a href="#" class="payment-button bank">
+                <a href="https://sub.goshiki-diet.or.jp/p/ifPXm0UumYhd" class="payment-button bank">
                     銀行振込一括払いはこちら
                 </a>
                 
@@ -1141,7 +1141,7 @@
                     クレジット一括/分割3〜24回払い：14,900円（税込）
                 </div>
                 
-                <a href="#" class="payment-button credit">
+                <a href="https://sub.goshiki-diet.or.jp/p/krW7NSgEfYKr" class="payment-button credit">
                     クレジット決済はこちら
                 </a>
                 
@@ -1413,7 +1413,7 @@
                     銀行振込一括払い：14,900円（税込）
                 </div>
                 
-                <a href="#" class="payment-button bank">
+                <a href="https://sub.goshiki-diet.or.jp/p/ifPXm0UumYhd" class="payment-button bank">
                     銀行振込一括払いはこちら
                 </a>
                 
@@ -1428,7 +1428,7 @@
                     クレジット一括/分割3〜24回払い：14,900円（税込）
                 </div>
                 
-                <a href="#" class="payment-button credit">
+                <a href="https://sub.goshiki-diet.or.jp/p/krW7NSgEfYKr" class="payment-button credit">
                     クレジット決済はこちら
                 </a>
                 
@@ -1448,7 +1448,7 @@
             <div style="margin-bottom: 20px;">
                 <a href="https://sub.goshiki-diet.or.jp/p/privacy" target="_blank" style="color: white; text-decoration: none; margin: 0 15px;">プライバシーポリシー</a>
                 <span style="color: rgba(255, 255, 255, 0.5);">|</span>
-                <a href="https://sub.goshiki-diet.or.jp/p/VYnavgonUMrK" target="_blank" style="color: white; text-decoration: none; margin: 0 15px;">特定商取引法に基づく表記</a>
+                <a href="https://sub.goshiki-diet.or.jp/p/ZtsMDxMkSC6G" target="_blank" style="color: white; text-decoration: none; margin: 0 15px;">特定商取引法に基づく表記</a>
                 <span style="color: rgba(255, 255, 255, 0.5);">|</span>
                 <a href="https://sub.goshiki-diet.or.jp/p/company" target="_blank" style="color: white; text-decoration: none; margin: 0 15px;">会社概要</a>
             </div>
@@ -1467,16 +1467,8 @@
             const distance = endDate - now;
 
             if (distance < 0) {
-                // 販売終了
-                document.getElementById('header-days').textContent = '00';
-                document.getElementById('header-hours').textContent = '00';
-                document.getElementById('header-minutes').textContent = '00';
-                document.getElementById('header-seconds').textContent = '00';
-                
-                document.getElementById('cta-days').textContent = '00';
-                document.getElementById('cta-hours').textContent = '00';
-                document.getElementById('cta-minutes').textContent = '00';
-                document.getElementById('cta-seconds').textContent = '00';
+                // 販売終了 - 公開終了ページにリダイレクト
+                window.location.href = 'https://sub.goshiki-diet.or.jp/p/thXoGsAa8TeC';
                 return;
             }
 
